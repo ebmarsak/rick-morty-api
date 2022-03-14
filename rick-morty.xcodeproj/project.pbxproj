@@ -3,27 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D808F4AF27CE9BA60096725A /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808F4AE27CE9BA60096725A /* CharacterTableViewCell.swift */; };
 		D8A28F2727CE7E680040DA36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A28F2627CE7E680040DA36 /* AppDelegate.swift */; };
 		D8A28F2927CE7E680040DA36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A28F2827CE7E680040DA36 /* SceneDelegate.swift */; };
-		D8A28F2B27CE7E680040DA36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A28F2A27CE7E680040DA36 /* ViewController.swift */; };
 		D8A28F2E27CE7E680040DA36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A28F2C27CE7E680040DA36 /* Main.storyboard */; };
 		D8A28F3027CE7E6F0040DA36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A28F2F27CE7E6F0040DA36 /* Assets.xcassets */; };
 		D8A28F3327CE7E6F0040DA36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A28F3127CE7E6F0040DA36 /* LaunchScreen.storyboard */; };
+		D8A28F3E27CE7F060040DA36 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D8A28F3D27CE7F060040DA36 /* SnapKit */; };
+		D8A28F4C27CE8EC80040DA36 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A28F4B27CE8EC80040DA36 /* Character.swift */; };
+		D8A28F5027CE8F350040DA36 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A28F4F27CE8F350040DA36 /* NetworkManager.swift */; };
+		D8A28F5627CE91210040DA36 /* RickMortyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A28F5527CE91210040DA36 /* RickMortyVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D808F4AE27CE9BA60096725A /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		D8A28F2327CE7E680040DA36 /* rick-morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rick-morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A28F2627CE7E680040DA36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8A28F2827CE7E680040DA36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D8A28F2A27CE7E680040DA36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D8A28F2D27CE7E680040DA36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8A28F2F27CE7E6F0040DA36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8A28F3227CE7E6F0040DA36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8A28F3427CE7E6F0040DA36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8A28F4B27CE8EC80040DA36 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		D8A28F4F27CE8F350040DA36 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D8A28F5527CE91210040DA36 /* RickMortyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8A28F3E27CE7F060040DA36 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +64,42 @@
 		D8A28F2527CE7E680040DA36 /* rick-morty */ = {
 			isa = PBXGroup;
 			children = (
-				D8A28F2627CE7E680040DA36 /* AppDelegate.swift */,
-				D8A28F2827CE7E680040DA36 /* SceneDelegate.swift */,
-				D8A28F2A27CE7E680040DA36 /* ViewController.swift */,
-				D8A28F2C27CE7E680040DA36 /* Main.storyboard */,
+				D8A28F5327CE90910040DA36 /* Views */,
+				D8A28F4E27CE8F290040DA36 /* Service */,
+				D8A28F4A27CE8D3C0040DA36 /* Model */,
 				D8A28F2F27CE7E6F0040DA36 /* Assets.xcassets */,
+				D8A28F2827CE7E680040DA36 /* SceneDelegate.swift */,
+				D8A28F2627CE7E680040DA36 /* AppDelegate.swift */,
+				D8A28F2C27CE7E680040DA36 /* Main.storyboard */,
 				D8A28F3127CE7E6F0040DA36 /* LaunchScreen.storyboard */,
 				D8A28F3427CE7E6F0040DA36 /* Info.plist */,
 			);
 			path = "rick-morty";
+			sourceTree = "<group>";
+		};
+		D8A28F4A27CE8D3C0040DA36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8A28F4B27CE8EC80040DA36 /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8A28F4E27CE8F290040DA36 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D8A28F4F27CE8F350040DA36 /* NetworkManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D8A28F5327CE90910040DA36 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D8A28F5527CE91210040DA36 /* RickMortyVC.swift */,
+				D808F4AE27CE9BA60096725A /* CharacterTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +118,9 @@
 			dependencies = (
 			);
 			name = "rick-morty";
+			packageProductDependencies = (
+				D8A28F3D27CE7F060040DA36 /* SnapKit */,
+			);
 			productName = "rick-morty";
 			productReference = D8A28F2327CE7E680040DA36 /* rick-morty.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +148,9 @@
 				Base,
 			);
 			mainGroup = D8A28F1A27CE7E680040DA36;
+			packageReferences = (
+				D8A28F3C27CE7F060040DA36 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = D8A28F2427CE7E680040DA36 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8A28F2B27CE7E680040DA36 /* ViewController.swift in Sources */,
 				D8A28F2727CE7E680040DA36 /* AppDelegate.swift in Sources */,
+				D8A28F5627CE91210040DA36 /* RickMortyVC.swift in Sources */,
+				D8A28F5027CE8F350040DA36 /* NetworkManager.swift in Sources */,
 				D8A28F2927CE7E680040DA36 /* SceneDelegate.swift in Sources */,
+				D8A28F4C27CE8EC80040DA36 /* Character.swift in Sources */,
+				D808F4AF27CE9BA60096725A /* CharacterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ebmarsak.rick-morty";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ebmarsak.rick-morty";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -339,6 +383,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8A28F3C27CE7F060040DA36 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8A28F3D27CE7F060040DA36 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8A28F3C27CE7F060040DA36 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D8A28F1B27CE7E680040DA36 /* Project object */;
 }
